@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "resthaut"
+    }
+  },
+  "defaultProject": "resthaut",
+  "cli": {
+    "analytics": false
+  }
 }

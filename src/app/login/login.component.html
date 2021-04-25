@@ -1,0 +1,23 @@
+<div class="loginPage">
+    <div class="contentPage">
+        <h1 class="mb-4">Connexion  </h1>
+        <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <label class="sr-only" for="username">Username</label>
+            <div class="input-group mb-3 mr-sm-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" formControlName="username" id="username" placeholder="Nom d'utilisateur">
+            </div>
+            <label class="sr-only" for="password">Username</label>
+            <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-lock"></i></div>
+                </div>
+                <input type="text" class="form-control" formControlName="password" id="password" placeholder="Mot de passe">
+            </div>
+            <button type="submit" class="mt-4 mb-3 btn btn-primary btn-block">S'identifier</button>
+        </form>
+    </div>
+</div>
+
